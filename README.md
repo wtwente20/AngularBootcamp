@@ -9,9 +9,14 @@ pw - Password Generator:
         -use of numbers
         -use of symbols
     **Future Edits**
-        -break up symbols into smaller              groups
+        -break up symbols into smaller groups
 
 
 cards - Social Media Blurb Practice:
 
 typingChallenge - Matching Input to Randomly Generated Text:
+
+pipes - Learn Angular Pipes and Provide a set of Simple Conversion
+Tools
+
+pages - Learn Pagination and How to Create Custom Directives
