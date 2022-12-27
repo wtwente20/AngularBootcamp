@@ -1,0 +1,83 @@
+<div class="container" id="box">
+  <h3>Angular Pipes Practice</h3>
+
+  <div class="row" (input)="onInput($event)">
+    <div class="form-group col">
+      <label>Name Capitalizer </label>
+      <input class="form-control" />
+    </div>
+  
+    <div class="col">
+      <label><b>Name</b></label>
+      <div>
+        {{ inputText | titlecase }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row" (input)="onDateInput($event)">
+    <div class="form-group col">
+      <label>Full Date Format</label>
+      <input type="date" class="form-control" />
+    </div>
+  
+    <div class="col">
+      <label><b>Converted Date </b></label>
+      <div>
+        {{ date | date: "longDate" }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row" (input)="onAmountChange($event)">
+    <div class="form-group col">
+      <label>Currency Formatting </label>
+      <input 
+        class="form-control"
+      />
+    </div>
+  
+    <div class="col">
+      <label><b>Currency in USD</b></label>
+      <div>
+        {{ amount | currency }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row" (input)="onMilesChange($event)">
+    <div class="form-group col">
+      <label>Miles </label>
+      <input 
+        class="form-control"
+      />
+    </div>
+  
+    <div class="col">
+      <label><b>Kilometers </b></label>
+      <div *ngIf="(miles | convert: 'km') > 0">
+        {{ miles | convert: "km" | number: '1.0-2' }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row" (input)="onDegreesChange($event)">
+    <div class="form-group col">
+      <label>Fahrenheit </label>
+      <input 
+        class="form-control"
+      />
+    </div>
+  
+    <div class="col">
+      <label><b>Celsius </b></label>
+      <div>
+        {{ degrees | convert: "c" | number: '1.0-2' }}
+      </div>
+    </div>
+  </div>
+  <br>
+  <h5>Thanks for visiting my page!</h5>
+  <p>-Westley Twente</p>
+<!-- {{ car | json }} -->
+</div>

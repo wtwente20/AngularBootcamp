@@ -1,0 +1,18 @@
+
+.container {
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    color: white;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 50px;
+    display: grid;
+    background: radial-gradient(farthest-corner at -23% 0px,#0053ad 22%,#001b85 36%,#000223);
+}
+
+.row {
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 15px;
+}
+
